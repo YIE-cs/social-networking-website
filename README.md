@@ -1,45 +1,53 @@
 # DragonSocial - MMA Social Network
 
-A full-stack social media platform themed around Mixed Martial Arts.  
-Users can register, log in, post text and images, like/comment on posts, follow/unfollow others, browse personalized feeds, get user recommendations, check live weather for fight cities, and see upcoming UFC events.
+Full-stack social networking website (Coursework 2 – CST2120)  
+Theme: Mixed Martial Arts  
+Made by: Yash Emerit Ish 
+Middlesex University Mauritius – December 2025
 
-Built for CST 2120 Coursework 2 – Web Applications & Databases (Middlesex University Mauritius)
+## Main Features
+- Register / Login (bcrypt + sessions)
+- Create posts with text + image upload
+- Like / Unlike posts
+- Comment on posts (nested)
+- Follow / Unfollow users
+- My Feed (only people you follow)
+- Explore Feed (all posts)
+- Sort posts: newest / oldest / most liked
+- Smart user recommendations
+- Live weather widget (OpenWeatherMap)
+- UFC events sidebar
+- Dark responsive design
 
-## Key Features
-- Secure user registration & login (bcrypt hashing + sessions)
-- Post creation with text (max 500 chars) + image upload
-- Like / Unlike posts + nested comments
-- Follow / Unfollow users with live follower counts
-- Two feeds: **My Feed** (posts from people you follow) + **Explore** (all posts)
-- Sorting: Newest / Oldest / Most Liked
-- Smart recommendations ("People you might want to follow")
-- Live weather widget (OpenWeatherMap) + UFC events sidebar
-- Responsive dark-themed UI optimized for mobile
+## Technologies
+- Backend: Node.js + Express
+- Database: MongoDB
+- Frontend: HTML, CSS, Vanilla JavaScript
+- Authentication: express-session + bcryptjs
+- File upload: multer
+- Session store: connect-mongo
 
-## Tech Stack
-- Backend: Node.js + Express  
-- Database: MongoDB  
-- Frontend: HTML5, CSS3, Vanilla JavaScript  
-- Authentication: express-session + bcryptjs  
-- File Uploads: Multer  
-- External API: OpenWeatherMap
+## How to Run
 
-## How to Run Locally
-
-**Prerequisites**  
-- Node.js installed  
-- MongoDB running (local or MongoDB Atlas)
-
-1. Clone the repository  
+1. Clone the project
+git clone https://github.com/YIE-cs/cst2120-cw2.git
+cd cst2120-cw2
 
 2. Install dependencies
+npm install
 
-3. Set up .env file
-- Copy `.env.example` → rename copy to `.env`
-- Fill in your values inside `.env`
+3. Create `.env` file in the root folder  
+Create a file named `.env` and put inside (change the values):
+MONGO_URI=mongodb://127.0.0.1:27017/dragonsocial
+SESSION_SECRET=your-very-long-random-secret-2025
+OPENWEATHER_API_KEY=your-openweather-key-here   # optional
+PORT=5050
 
-4. Create uploads folder
-5. Start the application
+4. Create uploads folder (for images)
+md uploads
 
-6. Open browser
+5. Start the server
+npm run devStart
+
+6. Open in browser
 http://localhost:5050
