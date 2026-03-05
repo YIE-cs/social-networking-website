@@ -3,11 +3,6 @@
 **A full-stack social media platform themed around Mixed Martial Arts.**  
 Users register, post text + images, like/comment, follow/unfollow, browse personalized feeds, get smart user recommendations, check live weather for fight cities, and see upcoming UFC events.
 
-Built as **Coursework 2** for CST 2120 (Web Applications & Databases) – Middlesex University Mauritius.
-
-## ✨ Live Demo
-(Deployed on Render / Railway soon – link coming!)
-
 ## 🔥 Key Features
 - Secure Authentication with bcrypt + MongoDB sessions
 - Post Creation (text + image upload)
