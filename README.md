@@ -30,7 +30,6 @@ Middlesex University Mauritius – December 2025
 ## How to Run
 
 1. Clone the project
-git clone 
 cd cst2120-cw2
 
 2. Install dependencies
