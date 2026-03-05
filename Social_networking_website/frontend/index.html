@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DragonSocial - MMA Community • M01002570</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <div id="registerSection" class="form-section">
+      <h1>Create Account</h1>
+      <form id="registerForm">
+        <input type="text" id="regUsername" placeholder="Username" required />
+        <input type="email" id="regEmail" placeholder="Email" required />
+        <input type="date" id="regDob" required />
+        <input type="tel" id="regPhone" placeholder="Phone (e.g. +230564892)" required />
+
+        <div class="password-wrapper">
+          <input type="password" id="regPassword" placeholder="Password" required />
+          <i class="fa-solid fa-eye-slash toggle-password"></i>
+        </div>
+
+        <div id="strength-container">
+          <div id="strength-bar"></div>
+          <p id="strength-text"></p>
+        </div>
+
+        <div class="password-wrapper">
+          <input type="password" id="regConfirmPassword" placeholder="Confirm Password" required />
+          <i class="fa-solid fa-eye-slash toggle-password"></i>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="registerMessage"></p>
+      <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+    </div>
+
+    <div id="loginSection" class="form-section" style="display:none">
+      <h1>Welcome Back</h1>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <div class="password-wrapper">
+          <input type="password" id="loginPassword" placeholder="Password" required />
+          <i class="fa-solid fa-eye-slash toggle-password"></i>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginMessage"></p>
+      <p>No account? <a href="#" id="showRegister">Register here</a></p>
+    </div>
+
+    <div id="appSection" style="display:none">
+      <div class="header">
+        <h1>DragonSocial MMA</h1>
+        <div class="header-right">
+          <span id="welcomeUser"></span>
+          <button class="logout" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+
+      <div class="app-grid">
+
+        <div class="left-sidebar">
+          <div class="profile-card-minimal">
+            <div class="profile-info-clean">
+              <h3 id="profileUsername">Loading...</h3>
+              <small id="profileHandle">@loading</small>
+            </div>
+
+            <div class="profile-stats-clean">
+              <div>
+                <strong id="followingCount">0</strong>
+                <span>Following</span>
+              </div>
+              <div>
+                <strong id="followersCount">0</strong>
+                <span>Followers</span>
+              </div>
+            </div>
+
+            <div class="weather-widget">
+              <div id="weatherDisplay">
+                <p style="text-align:center;color:#888;">Loading weather...</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="center-feed">
+
+          <div class="feed-controls">
+
+            <button id="feedFollowing" class="feed-tab active">My Feed</button>
+            <button id="feedEveryone" class="feed-tab">Explore</button>
+
+            <select id="feedSort">
+              <option value="new">Newest</option>
+              <option value="old">Oldest</option>
+              <option value="top">Most Liked</option>
+            </select>
+
+          </div>
+
+          <div class="post-box">
+            <form id="postForm">
+              <textarea id="postText" placeholder="What are your thoughts?" maxlength="500"></textarea>
+              <div class="post-actions">
+                <label class="image-label">
+                  Add Photo
+                  <input type="file" id="postImage" accept="image/*">
+                </label>
+                <span id="fileName"></span>
+                <button type="submit">Post</button>
+              </div>
+            </form>
+            <p id="postMessage"></p>
+          </div>
+
+          <div id="feedContainer">
+            <div id="feed"><p>Loading feed...</p></div>
+          </div>
+
+        </div>
+
+        <div class="sidebar">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchUsersInput" placeholder="Search community members..." />
+            <div id="searchResults" class="search-results"></div>
+          </div>
+
+          <div class="who-to-follow">
+            <h3>People u might want to follow</h3>
+            <div id="suggestions"></div>
+            <button id="refreshSuggestions">Refresh</button>
+          </div>
+
+          <div class="ufc-events">
+            <h3>Next UFC Events</h3>
+            <div id="ufcEvents">Loading...</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js" type="module"></script>
+  <script src="js/app.js" type="module"></script>
+
+</body>
+</html>
