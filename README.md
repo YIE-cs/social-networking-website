@@ -31,3 +31,15 @@ Built for CST 2120 Coursework 2 – Web Applications & Databases (Middlesex Univ
 - MongoDB running (local or MongoDB Atlas)
 
 1. Clone the repository  
+
+2. Install dependencies
+
+3. Set up .env file
+- Copy `.env.example` → rename copy to `.env`
+- Fill in your values inside `.env`
+
+4. Create uploads folder
+5. Start the application
+
+6. Open browser
+http://localhost:5050
