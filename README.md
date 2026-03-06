@@ -27,6 +27,18 @@ Middlesex University Mauritius – December 2025
 - File upload: multer
 - Session store: connect-mongo
 
+## Screenshot
+### 1. Registration & Login page
+<img width="740" height="752" alt="create account" src="https://github.com/user-attachments/assets/5ba36f0a-8e01-478d-9424-718cf827eafa" />
+<img width="529" height="725" alt="login" src="https://github.com/user-attachments/assets/d63e6b7b-3d30-4199-8f77-943ca6d07b3d" />
+
+### 2. Main page (Weather & next event APIs, likes & comments)
+<img width="1570" height="744" alt="next event" src="https://github.com/user-attachments/assets/4ce7af86-6fc1-4054-beb0-d2c4f5301886" />
+
+### 3. feed sorting + follow recommendations
+<img width="1569" height="754" alt="sort + suggestion" src="https://github.com/user-attachments/assets/c454f938-12c6-47e9-a138-61fdbe3a1508" />
+
+
 ## How to Run
 
 1. Clone the project
