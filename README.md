@@ -29,7 +29,7 @@ Middlesex University Mauritius – December 2025
 
 ## Screenshot
 ### 1. Registration & Login page
-<img width="740" height="752" alt="create account" src="https://github.com/user-attachments/assets/5ba36f0a-8e01-478d-9424-718cf827eafa" />
+<img width="529" height="752" alt="create account" src="https://github.com/user-attachments/assets/a80e2497-a192-4de2-beb5-737c2e9955a7" />
 <img width="529" height="725" alt="login" src="https://github.com/user-attachments/assets/d63e6b7b-3d30-4199-8f77-943ca6d07b3d" />
 
 ### 2. Main page (Weather & next event APIs, likes & comments)
